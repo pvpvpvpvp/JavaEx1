@@ -6,19 +6,58 @@ public class Quiz03 {
 		// TODO Auto-generated method stub
 		//ifEx();
 //		switchEx();
-//		dateEx();
-		Quiz1();
-		Quiz2();
+////		dateEx();
+//		Quiz1();
+//		Quiz2();
+//		
+		switchEx03(null);
+	}
+	private static void switchEx03(String day) {
+		
 	}
 	//연습문제
 	private static void Quiz1() {
 		Scanner sc = new Scanner(System.in);
-		int a=0;		
+		int a=0;
+		System.out.println("숫자를 입력하세요");
+		a=sc.nextInt();
+		if(a%3==0)
+			System.out.println(a+"는 3의 배수입니다.");
+		else
+			System.out.println(a+"는 3의 배수가 아닙니다.");
 	}
 	private static void Quiz2() {
 		Scanner sc = new Scanner(System.in);
 		int a=0;	
-	}
+		System.out.println("점수를 입력하세요 :");
+		a=sc.nextInt();
+		if(a>100)
+			a=11;
+		else
+			a=a/10;
+		switch(a) {
+		case 11 :
+			System.out.println("올바른값을 입력하세요");
+			break;
+		case 10 :
+		case 9 :
+			System.out.println("A등급");
+			break;
+		case 8 :
+			System.out.println("B등급");
+			break;
+		case 7 :
+			System.out.println("C등급");
+			break;
+		case 6 :
+			System.out.println("D등급");
+			break;
+		default :
+			System.out.println("F등급");
+		}
+			
+			sc.close();
+		}
 	//월일 계산기
 	private static void dateEx() {
 		Scanner sc = new Scanner(System.in);
