@@ -1,5 +1,5 @@
 package com.javaex.basics.reftypes;
-
+import java.util.*;
 public class EnumEx {
 
 	public static void main(String[] args) {
@@ -15,7 +15,15 @@ public class EnumEx {
 				today.ordinal() //열거 상수 내 순번
 				);
 		 Week obj= Week.valueOf("FRIDAY");
-		 System.out.printf("%s , %d ",obj.name(),obj.ordinal());
-	}
+		 System.out.printf("%s , %d %n",obj.name(),obj.ordinal());
+		 
+		 System.out.printf("%s와 %s의 순번차: %d %n",
+				 today.name(), obj.name(), today.compareTo(obj)	
+				 );
+		 
+		 Week[] days = Week.values();
+		 
+		 System.out.println(Arrays.toString(days));
+		 }
 
 }
