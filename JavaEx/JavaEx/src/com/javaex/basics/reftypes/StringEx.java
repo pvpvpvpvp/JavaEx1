@@ -6,6 +6,8 @@ public class StringEx {
 //		stringType();
 		stringFormatEx();
 	}
+	
+	//열거형 enum
 	private static void stringFormatEx() {
 		// %d 정수 %s 문자열 %n 개행 %% %하나 %f 실수
 		String food ="사과";
