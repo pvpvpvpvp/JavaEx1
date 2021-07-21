@@ -8,8 +8,61 @@ public class ArrayEx {
 		// TODO Auto-generated method stub
 //		defineArray();
 //		multdimArray();
-		
+		arrayCopyFor();
+//		arrayCopySyetemEX();
 	}
+	
+	private static void arrayCopySyetemEX() {
+		int source[] = {1,2,3};
+		int target[] = new int[10];
+		
+		//복사
+		System.arraycopy(source, 0, target, 0, source.length);
+		
+		System.out.println("원본:"+Arrays.toString(source));
+		System.out.println("타겟:"+Arrays.toString(target));
+		for(int i:source)// 1 부터 시작 해서 배열의 길이(length)만큼 반복됨.
+		{
+			System.out.println(i+" ");
+		}
+	}
+	
+	private static void arrayCopyFor() {
+		// 배열은 크기 변경 불가
+		// 새 배열을 만들어서 복사
+		int source[] = {1,2,3};
+		int targer[] = new int[10];
+		//복사
+		for(int i=0;i<source.length; i++)
+		{
+			targer[i]= source[i];
+		}
+		
+		//향상된 for문
+		
+		for(int value:source) {
+			System.out.print(value+"\t");
+		}
+		
+//		for(int i=0;i<source.length;i++)
+//		{
+//			System.out.print(source[i]+"\t");
+//		}
+		System.out.println();
+		for(int i:targer) {
+			System.out.print(i+"\t");
+		}
+//		for(int i=0;i<targer.length;i++)
+//		{
+//			System.out.print(targer[i]+"\t");
+//		}
+		
+		// System.arraycopy()로 배열을 복사 할 수 있다. //원본배열(복사할 이름), 시작인덱스,타겟배열(복사될 타겟),시작인덱스,복사할 깋이
+	}
+	
+		
+		
+	
 	private static void multdimArray() {
 		int[][] twoDim = new int[5][10];
 		
