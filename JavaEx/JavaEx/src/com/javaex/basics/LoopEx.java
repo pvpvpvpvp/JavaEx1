@@ -7,10 +7,22 @@ public class LoopEx {
 //		continueEx();
 //		name();
 //		starEx();
-		dieEx();
+//		dieEx();
+		whilettEx();
+	}
+	private static void whilettEx() {
+		int i=1;
+		while(true)
+		{
+			if(i%6==0&&i%14==0)
+				break;
+				
+			i++;
+		}
+		System.out.println(i);
 	}
 	private static void starEx() {
-		for(int i=0;i<5;i++) {
+		for(int i=0;i<6;i++) {
 			for(int j=0;j<i+1;j++) {
 				System.out.print("*");
 			}
