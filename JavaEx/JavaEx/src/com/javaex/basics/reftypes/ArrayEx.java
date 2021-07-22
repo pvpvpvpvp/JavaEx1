@@ -8,10 +8,11 @@ public class ArrayEx {
 		// TODO Auto-generated method stub
 //		defineArray();
 //		multdimArray();
-		arrayCopyFor();
+//		arrayCopyFor();
 //		arrayCopySyetemEX();
 	}
-	
+		
+	}
 	private static void arrayCopySyetemEX() {
 		int source[] = {1,2,3};
 		int target[] = new int[10];
