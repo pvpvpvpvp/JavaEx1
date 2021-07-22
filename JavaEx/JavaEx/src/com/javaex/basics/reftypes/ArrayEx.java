@@ -21,7 +21,7 @@ public class ArrayEx {
 		
 		System.out.println("원본:"+Arrays.toString(source));
 		System.out.println("타겟:"+Arrays.toString(target));
-		for(int i:source)// 1 부터 시작 해서 배열의 길이(length)만큼 반복됨.
+		for(int i:source)// i의 값이 배열안에 값이랑 대치되서 나옴 즉 배열내부값을 soure[i]==i가 되는거임..
 		{
 			System.out.println(i+" ");
 		}
@@ -49,8 +49,13 @@ public class ArrayEx {
 //			System.out.print(source[i]+"\t");
 //		}
 		System.out.println();
+		int k=0;
 		for(int i:targer) {
-			System.out.print(i+"\t");
+			k++;
+			if(k%2>0)
+				System.out.print(i+"홀\t");
+			else
+				System.out.print(i+"짝\t");
 		}
 //		for(int i=0;i<targer.length;i++)
 //		{
