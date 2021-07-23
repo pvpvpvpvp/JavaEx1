@@ -31,8 +31,10 @@ public class Number1010 {
 		for(int i=0;i<c;i++)//출력구문
 		{
 			resultend[i]=m[i]/(n[i]*mn[i]);// 경우의 수 조합공식을 이용한 최종 계산결과
-			if(resultend[i]>(int)resultend[i])//실수형 계산의 오차보정해주기 (그냥소숫점올림)
+			if(resultend[i]>(int)resultend[i]+0.5f)//실수형 계산의 오차보정해주기 (그냥소숫점올림)
 				resultend[i]++;
+			if(a[i]==0||b[i]==0)
+				resultend[i]=0;
 			System.out.println((int)resultend[i]);
 		}
 	}
@@ -45,4 +47,4 @@ public class Number1010 {
 		return return1;
 	}
 	
-}
+}//실패
