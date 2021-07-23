@@ -1,9 +1,5 @@
 package com.javaex.basics;
 
-<<<<<<< Upstream, based on origin/master
-=======
-
->>>>>>> 84bef8f 퀴즈 백준문제풀이
 //변수예제
 //데이터 타입 예제
 
