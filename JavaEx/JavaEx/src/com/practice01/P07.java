@@ -36,7 +36,7 @@ public class P07 {
 				System.out.println("============================");
 				break end;
 			}
-			else30{
+			else{
 				i= r.nextInt(99)+1;
 			}
 		}
