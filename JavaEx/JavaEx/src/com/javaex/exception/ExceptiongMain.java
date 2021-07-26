@@ -1,16 +1,43 @@
 package com.javaex.exception;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ExceptiongMain {
+public class ExceptiongMain  {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 //		arithExceptiongEx();
 //		nullPointerxExceptionEX();
-		arrayIndexExceptionEx();
+//		arrayIndexExceptionEx();
+		throwExceptEx();
+	}
+	private static void throwExceptEx() {
+		ThrowExcept except = new ThrowExcept();
+		try {
+			double result = except.divide(100,0);
+		except.executeException();
+		except.executRuntimeException();
+		}catch (CustomArithmeticException e) {// 새로운 정의를 통해 더 자세한 에러 정보르 뽑아낼 수 있다. 
+											  // 사용자 예외 정의
+			// TODO: handle exception
+			System.err.println(e.getMessage());
+			System.err.printf("num1: %d%n",e.getNumber1());
+			System.err.printf("num2: %d%n",e.getNumber2());
+		}catch (ArithmeticException e) {
+			System.err.println(e.getMessage());
+			System.err.println("0으로는 나눌 수 없습니다.");
+			// TODO: handle exception
+		}catch (IOException e) {
+			// TODO: handle exception
+			System.err.println(e.getMessage());
+		}catch (RuntimeException e) {
+			// TODO: handle exception
+			System.err.println(e.getMessage());
+		}
+		System.out.println("End of Code");
 	}
 	private static void arrayIndexExceptionEx() {
 		//배열의 범위를 벗어난 접근
