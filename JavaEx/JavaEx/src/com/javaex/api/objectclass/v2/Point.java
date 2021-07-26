@@ -16,7 +16,7 @@ public class Point extends java.lang.Object {//기본상태랑 같음 생략될�
 			
 		}
 		@Override  //재 정의 두개의 값을 비교..
-		public boolean equals(Object obj) {
+		public boolean equals(Object obj) {  //a
 			// TODO Auto-generated method stub
 			// 전달받은 object가 Point 클래스의 객체?
 			if(obj instanceof Point) {
