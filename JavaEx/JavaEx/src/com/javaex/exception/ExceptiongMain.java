@@ -22,6 +22,7 @@ public class ExceptiongMain  {
 		except.executRuntimeException();
 		}catch (CustomArithmeticException e) {// 새로운 정의를 통해 더 자세한 에러 정보르 뽑아낼 수 있다. 
 											  // 사용자 예외 정의
+			
 			// TODO: handle exception
 			System.err.println(e.getMessage());
 			System.err.printf("num1: %d%n",e.getNumber1());
