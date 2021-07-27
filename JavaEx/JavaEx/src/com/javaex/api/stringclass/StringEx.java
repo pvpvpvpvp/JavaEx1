@@ -105,7 +105,7 @@ public class StringEx {
 		// <0 순서가 앞이다
 		// >0 순서가 뒤다
 		
-		//문자 정렬 sort
+		//문자 정렬 sort에 사용 가능
 		
 		
 		
