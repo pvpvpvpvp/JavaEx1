@@ -20,7 +20,7 @@ public class P08 {
 				count++;
 			}
 		}
-		avg=(sum*100)/count;
+		avg=((sum*100)/count)/100.0;
 		System.out.println(sum);
 		System.out.println(avg);
 		
