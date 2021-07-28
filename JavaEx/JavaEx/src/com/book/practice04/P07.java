@@ -1,6 +1,6 @@
 package com.book.practice04;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class P07 {
 

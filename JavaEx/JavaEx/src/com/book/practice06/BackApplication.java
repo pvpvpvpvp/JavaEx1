@@ -20,12 +20,16 @@ public class BackApplication {
 			int selectNo = sc.nextInt();
 
 			if (selectNo == 1) {
+				sTitle(selectNo);
 				createAccount();
 			} else if (selectNo == 2) {
+				sTitle(selectNo);
 				accountList();
 			} else if (selectNo == 3) {
+				sTitle(selectNo);
 				deposit();
 			} else if (selectNo == 4) {
+				sTitle(selectNo);
 				withdraw();
 			} else if (selectNo == 5) {
 				run = false;
@@ -34,9 +38,6 @@ public class BackApplication {
 		System.out.println("프로그램 종료");
 	}
 	private static void createAccount() {
-		System.out.println("----------");
-		System.out.println(" 계좌 생성 ");
-		System.out.println("----------");
 		
 		System.out.print("계좌 번호");
 		String ano = sc.next();
@@ -50,7 +51,7 @@ public class BackApplication {
 	
 	}
 	private static void accountList() {
-		
+
 		for(int j=0; j<i;j++)
 		{
 			System.out.printf("%s  %s  %d%n",accountArray[j].getAno(),accountArray[j].getOwner(),accountArray[j].getBalance());
@@ -58,7 +59,7 @@ public class BackApplication {
 		
 	}
 	private static void deposit() {
-		
+
 		System.out.print("계좌 번호");
 		String ano = sc.next();
 		System.out.print("임금액");
@@ -76,6 +77,7 @@ public class BackApplication {
 		
 	}
 	private static void withdraw() {
+		
 		System.out.print("계좌 번호");
 		String ano = sc.next();
 		System.out.print("출금액");
@@ -98,11 +100,33 @@ public class BackApplication {
 		{
 			if(ano.equals(accountArray[j].getAno())) // 배열안의 값이 완전 같은 배열을찾고
 			{
-				
 				ac=accountArray[j]; // 그 값을 저장한다음. 
 			}
 		}
 		return ac; //반환해줌 반환형태는 배열형태		ㅂ
+	}
+	private static void sTitle(int number) {
+		
+		System.out.println("------------------");
+		
+		switch (number) {
+		case 1:
+			System.out.println("계좌생성");
+			break;
+		case 2:
+			System.out.println("계좌목록");
+			break;
+		case 3:
+			System.out.println("예금");
+			break;
+		case 4:
+			System.out.println("출금");
+			break;
+		default:
+			break;
+		}
+		System.out.println("------------------");
+		
 	}
 	
 }

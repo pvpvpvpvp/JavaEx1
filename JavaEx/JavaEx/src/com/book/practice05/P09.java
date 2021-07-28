@@ -37,16 +37,19 @@ public class P09 {
 			} else if (selectNo == 4) {
 				int max=0;
 				int sum=0;
-				Double avg=0.;
+				double avg1=0.;
+				double avg=0.;
 				for(int i:score)
 				{
 					sum+=i;
 					if(i>max)
 						max=i;
 				}
+				avg1= (double)sum/studentNum;
 				avg= (sum*100)/studentNum/100.0;
 				System.out.println("최고 점수 : "+max);
 				System.out.println("평균 점수 : "+avg);
+				System.out.println(avg1);
 			} else if (selectNo == 5) {
 				run = false;
 			}

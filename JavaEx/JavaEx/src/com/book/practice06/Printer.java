@@ -1,5 +1,6 @@
 package com.book.practice06;
 
+
 public class Printer {
 	
 	int i;
@@ -12,6 +13,7 @@ public class Printer {
 	
 	public static void println(int i) {
 		System.out.println(i);
+		
 	}
 	public static void println(Boolean i) {
 		System.out.println(i);
