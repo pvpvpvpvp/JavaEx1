@@ -20,7 +20,6 @@ public class QueueEx {
 		while(!queue.isEmpty()) {
 			System.out.println("POLL : "+queue.poll());
 			System.out.println("Que : "+queue);
-
 		}
 	}
 
