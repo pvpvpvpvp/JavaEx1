@@ -69,9 +69,10 @@ public class AuthorDAOimplOracle implements AuthorDAO {
 		try {
 			conn =getConnection();
 			String sql = "SELECT author_id,author_name,author_desc FROM author "
-					+ " WHERE author_name LIKE ?";
+					+ " WHERE author_name LIKE ? OR author_desc LIKE ?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, "%"+keyword+"%");
+			pstmt.setString(2, "%"+keyword+"%");
 			rs=pstmt.executeQuery();
 			while(rs.next())
 			{

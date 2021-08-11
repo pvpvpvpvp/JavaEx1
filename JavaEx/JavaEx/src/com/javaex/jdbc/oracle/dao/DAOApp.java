@@ -18,7 +18,7 @@ public class DAOApp {
 
 	private static void searchAuthor() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("검색어:desc");
+		System.out.print("검색어:");
 		String keyword = sc.nextLine();
 		
 		AuthorDAO dao = new AuthorDAOimplOracle();
