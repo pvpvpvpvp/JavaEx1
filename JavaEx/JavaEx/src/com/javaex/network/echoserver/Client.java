@@ -28,7 +28,7 @@ public class Client {
 			System.out.println("[연결 요청]");
 			
 			//	접속 시도
-			InetSocketAddress server = new InetSocketAddress("192.168.1.122", 
+			InetSocketAddress server = new InetSocketAddress("192.168.0.16", 
 													10000);
 			socket.connect(server);
 			System.out.println("[서버에 연결되었습니다.]");
@@ -42,7 +42,7 @@ public class Client {
 			//	주고받을 데이터 Text -> Reader
 			Reader isr = new InputStreamReader(is, "UTF-8");
 			BufferedReader br = new BufferedReader(isr);
-			// 키보드 메세지 입력
+//			 키보드 메세지 입력
 			Scanner sc= new Scanner(System.in);
 			while(true) {
 				String message = sc.nextLine();
